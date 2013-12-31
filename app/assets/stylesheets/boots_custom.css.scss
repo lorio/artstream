@@ -1,4 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Trade+Winds);
+
 $jumbotron-bg: rgba(53,148,220,.1);
+$navbar-inverse-bg: #2c3e50;
+$navbar-inverse-link-color: #fef9e7;
+$display-font-family: "Trade Winds", cursive;
 // img-url(images/stream) 0 0 no-repeat;
 
 @import 'bootstrap';
@@ -12,12 +17,13 @@ $jumbotron-bg: rgba(53,148,220,.1);
 	border-color: #fbf0c0;
 	color: #2980b9;
 }
-.btn-lg {border-radius: 50px}
+.btn-lg {border-radius: 50px;}
 .jumbotron p {color: #2c3e50; font-weight: 400;}
-.jumbotron h1 {
+.jumbotron h1, .navbar-brand {
 	color: #2c3e50; 
-	font-family: "Playfair Display", serif;
+	font-family: $display-font-family; 
 	font-style: italic;
 	font-weight: 700;
 }
+.center {text-align: center;}
 
