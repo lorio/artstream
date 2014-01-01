@@ -9,7 +9,9 @@ $display-font-family: "Trade Winds", cursive;
 @import 'bootstrap';
 
 .logo-bg {
+	background-image: url( <%= asset_path 'stream.svg' %> );
 	background: url(stream.svg) center no-repeat;
+	//background: center no-repeat;
 	background-color: rgba(53,148,220,.2);
 }
 .btn-primary {
