@@ -2,7 +2,7 @@
 
 $cream: #fef9e7;
 $navy: #2c3e50;
-$jumbotron-bg: rgba(53,148,220,.1);
+//$jumbotron-bg: @include logo-bg;
 $navbar-inverse-bg: $navy;
 $navbar-inverse-link-color: $cream;
 $display-font-family: "Trade Winds", cursive;
@@ -18,12 +18,6 @@ $btn-default-color: $navy;
 
 @import 'bootstrap';
 
-// .btn-round {
-// 	background-color: $cream;
-// 	border-color: #fbf0c0;
-// 	color: #2980b9;
-// 	border-radius: 50px;
-// }
 .jumbotron {
 	@include logo-bg;	
  	p {color: $navy; font-weight: 400;}
