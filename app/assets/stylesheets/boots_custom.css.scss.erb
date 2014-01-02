@@ -1,9 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Trade+Winds);
 
+$cream: #fef9e7;
+$navy: #2c3e50;
 $jumbotron-bg: rgba(53,148,220,.1);
 $navbar-inverse-bg: #2c3e50;
-$navbar-inverse-link-color: #fef9e7;
+$navbar-inverse-link-color: $cream;
 $display-font-family: "Trade Winds", cursive;
+
 @mixin logo-bg {
 	background-image: url( <%= asset_path 'stream.svg' %> );
 	background: url(stream.svg) center no-repeat;
@@ -13,16 +16,16 @@ $display-font-family: "Trade Winds", cursive;
 @import 'bootstrap';
 
 .btn-round {
-	background-color: #fef9e7;
+	background-color: $cream;
 	border-color: #fbf0c0;
 	color: #2980b9;
 	border-radius: 50px;
 }
 .jumbotron {
 	@include logo-bg;	
- 	p {color: #2c3e50; font-weight: 400;}
+ 	p {color: $navy; font-weight: 400;}
 	h1 {
-		color: #2c3e50;
+		color: $navy;
 		font-family: $display-font-family; 
 	} 
 }
