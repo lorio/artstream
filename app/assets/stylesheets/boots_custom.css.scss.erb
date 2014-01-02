@@ -4,28 +4,29 @@ $jumbotron-bg: rgba(53,148,220,.1);
 $navbar-inverse-bg: #2c3e50;
 $navbar-inverse-link-color: #fef9e7;
 $display-font-family: "Trade Winds", cursive;
-// img-url(images/stream) 0 0 no-repeat;
+@mixin logo-bg {
+	background-image: url( <%= asset_path 'stream.svg' %> );
+	background: url(stream.svg) center no-repeat;
+	background-color: rgba(53,148,220,.2);
+}
 
 @import 'bootstrap';
 
-.logo-bg {
-	background-image: url( <%= asset_path 'stream.svg' %> );
-	background: url(stream.svg) center no-repeat;
-	//background: center no-repeat;
-	background-color: rgba(53,148,220,.2);
-}
-.btn-primary {
+.btn-round {
 	background-color: #fef9e7;
 	border-color: #fbf0c0;
 	color: #2980b9;
+	border-radius: 50px;
 }
-.btn-lg {border-radius: 50px;}
-.jumbotron p {color: #2c3e50; font-weight: 400;}
-.jumbotron h1, .navbar-brand {
-	color: #2c3e50; 
-	font-family: $display-font-family; 
-	font-style: italic;
-	font-weight: 700;
+.jumbotron {
+	@include logo-bg;	
+ 	p {color: #2c3e50; font-weight: 400;}
+	h1 {
+		color: #2c3e50;
+		font-family: $display-font-family; 
+	} 
 }
 .center {text-align: center;}
-
+.navbar-brand {
+	font-family: $display-font-family;
+}
