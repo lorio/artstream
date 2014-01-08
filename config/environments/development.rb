@@ -30,5 +30,5 @@ Artstream::Application.configure do
   #required for Heroku
    config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
-   config.assets.prefix = "/dev-assets"
+   #config.assets.prefix = "/dev-assets"
 end
