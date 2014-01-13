@@ -79,7 +79,7 @@ Artstream::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Required for Devise
-  config.action_mailer.default_url_options = { :host => 'artstream.us' }
+  config.action_mailer.default_url_options = { :host => 'artstream.herokuapp.com' }
   
   #Sets Paperclip to upload images to Amazon S3
   config.paperclip_defaults = {
