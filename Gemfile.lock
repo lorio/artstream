@@ -54,6 +54,8 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.0.2)
+    google-webfonts (0.1.2)
+      actionpack (>= 3.0.0)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -150,6 +152,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.0.3.0)
   coffee-rails (~> 4.0.0)
   devise (~> 3.1.1)
+  google-webfonts
   jbuilder (~> 1.2)
   jquery-rails
   jquery-turbolinks
