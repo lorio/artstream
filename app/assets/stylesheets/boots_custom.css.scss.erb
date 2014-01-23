@@ -1,5 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Trade+Winds);
 
+$white: #ffffff;
+$body-bg: #ecf0f1;
 $cream: #fef9e7;
 $navy: #2c3e50;
 $navbar-inverse-bg: $navy;
@@ -7,6 +9,8 @@ $navbar-inverse-link-color: $cream;
 $display-font-family: 'Trade Winds', cursive;
 $btn-default-bg: $cream;
 $btn-default-color: $navy;
+$panel-header-bgColor: $white;
+
 
 @mixin logo-bg {
 	background-image: url( <%= asset_path 'stream.svg' %> );
@@ -29,3 +33,12 @@ $btn-default-color: $navy;
 .navbar-brand {
 	font-family: $display-font-family;
 }
+.panel-header,.show {
+	background-color: $white;
+	border-bottom: 0px;
+	p {
+		padding-left: 60px;
+		white-space: pre-line;
+	}
+}
+.panel .show {padding-top: 45px;}
