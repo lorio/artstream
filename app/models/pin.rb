@@ -1,8 +1,8 @@
 class Pin < ActiveRecord::Base
 				belongs_to :user
 				has_attached_file :image, :styles => { 
-																		:medium => "300x300>",																			 
-																		:thumb => "100x100>" }
+																		:medium => "700x700>",																			 
+																		:thumb => "300x300>" }
 
 				validates :image, presence: true
 													

@@ -9,12 +9,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<%= render 'layouts/header' %>
-	<div class="container">
-		<% flash.each do |name, msg| %>
-     <%= content_tag(:div, msg, class: "alert alert-info") %>
-		<% end %>
-		<%= yield %>
-	</div>
+  <div id="wrap">
+  	<%= render 'layouts/header' %>
+  	<div class="container">
+  		<% flash.each do |name, msg| %>
+       <%= content_tag(:div, msg, class: "alert alert-info") %>
+  		<% end %>
+  		<%= yield %>
+  	</div>
+  </div>
+  <div id="footer">
+    <div class="container">
+      <p>&copy;2014 Lori Ortiz. Users reserve all rights to content. Contact lori@loriortiz.com for info unless provided by User. Site by<a href="http://artanddesign.us"> Art and Design.</a></p>
+    </div>
+  </div>  
 </body>
 </html>
