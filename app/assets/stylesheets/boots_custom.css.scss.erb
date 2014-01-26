@@ -39,8 +39,11 @@ $panel-header-bgColor: $white;
 }
 .panel .show {
 	padding-top: 45px;
+	@media(max-width:767px){
+  	padding: 8px;
+  }
 }
-.just {text-align: justify;}
+.show img {max-width: 100%}
 
 /*******sticky footer********/
 html,
