@@ -20,6 +20,7 @@ gem 'will_paginate-bootstrap'
 
 group :development, :test do
      gem 'sqlite3'
+     gem 'foreman'
 end
 
 group :production do
