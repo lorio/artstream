@@ -1,10 +1,8 @@
 Artstream::Application.routes.draw do
-  root "pins#index"
+  resources :pins
 
   devise_for :users
-  resources :users
-  
-  resources :pins
+  root "pins#index"
   
   get "about" => "pages#about"
   # The priority is based upon order of creation: first created -> highest priority.
