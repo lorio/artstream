@@ -41,6 +41,6 @@ Artstream::Application.configure do
     user_name: ENV["GMAIL_USERNAME"],
     password: ENV["GMAIL_PASSWORD"]
   }
-
+  config.middleware.use Rails::Rack::LogTailer
    #config.assets.prefix = "/dev-assets"
 end

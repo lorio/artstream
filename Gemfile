@@ -17,6 +17,9 @@ gem 'masonry-rails'
 gem 'google-webfonts'
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
+gem 'heroku-forward'
+gem 'thin'
+
 
 group :development, :test do
      gem 'sqlite3'
