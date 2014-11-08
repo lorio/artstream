@@ -28,18 +28,18 @@ Artstream::Application.configure do
   config.assets.debug = false
 
   #required for Heroku
-  config.action_mailer.default_url_options = { :host => 'localhost:5000' }
+  config.action_mailer.default_url_options = { :host => "artstream.herokuapp.com" }
 
   config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
     address: "smtp.mandrillapp.com",
     port: 587,
-    domain: ENV["MANDRILL_DOMAIN"],
+    #domain: ENV["MANDRILL_DOMAIN"],
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: ENV["MANDRILL_USERNAME"],
-    password: ENV["MANDRILL_APIKEY"]
+    password: ENV["MANDRILL_PASSWORD"]
   }
   config.middleware.use Rails::Rack::LogTailer
    #config.assets.prefix = "/dev-assets"
