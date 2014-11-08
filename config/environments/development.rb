@@ -39,7 +39,7 @@ Artstream::Application.configure do
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: ENV["MANDRILL_USERNAME"],
-    password: ENV["MANDRILL_PASSWORD"]
+    password: ENV["MANDRILL_APIKEY"]
   }
   config.middleware.use Rails::Rack::LogTailer
    #config.assets.prefix = "/dev-assets"

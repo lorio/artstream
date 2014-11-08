@@ -60,6 +60,7 @@ GEM
       eventmachine
     erubis (2.7.0)
     eventmachine (1.0.3)
+    excon (0.41.0)
     execjs (2.0.2)
     ffi (1.9.6)
     foreman (0.64.0)
@@ -87,6 +88,9 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    mandrill-api (1.0.53)
+      excon (>= 0.16.0, < 1.0)
+      json (>= 1.7.7, < 2.0)
     masonry-rails (0.2.1)
       rails
     mime-types (1.25.1)
@@ -184,6 +188,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   jquery-turbolinks
+  mandrill-api
   masonry-rails
   paperclip (~> 3.0)
   pg

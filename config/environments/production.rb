@@ -79,7 +79,7 @@ Artstream::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Required for Devise
-  config.action_mailer.default_url_options = { :host => 'thewatercolorclub.com' }
+  config.action_mailer.default_url_options = { :host => "thewatercolorclub.com" }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
@@ -89,11 +89,11 @@ Artstream::Application.configure do
   config.action_mailer.smtp_settings = {
     address: "smtp.mandrillapp.com",
     port: 587,
-    domain: ENV["MANDRILL_DOMAIN"],
+  #  domain: ENV["MANDRILL_DOMAIN"],
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: ENV["MANDRILL_USERNAME"],
-    password: ENV["MANDRILL_PASSWORD"]
+    password: ENV["MANDRILL_APIKEY"]
   }
     
   #Sets Paperclip to upload images to Amazon S3
